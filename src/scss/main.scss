@@ -1,0 +1,57 @@
+// Custom variables
+// $body-bg-dark: #042b46;
+$body-bg-dark: #000000;
+// $body-bg: #0e1126;
+$body-color-dark: #fff;
+$font-family-sans-serif: "Recursive", "IBM Plex Sans", sans-serif;
+
+// headings is poppins
+// $headings-font-family: "Poppins", sans-serif;
+$headings-font-weight: 700;
+
+// lead is ibm plex serif
+// $font-family-serif: "IBM Plex Serif", "Georgia", "Times New Roman", serif;
+// $lead-font-family: $font-family-serif;
+
+// since background is dark, we need to make primary color lighter
+$primary: #59fed5;
+
+@import "bs";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.topnavbar {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.main-header {
+  // font-size: 6rem;
+  @include font-size(6rem);
+
+  /* set variation axis values */
+  --mono: "MONO" 0;
+
+  /* Monospace: Sans (natural-width) or Mono (fixed-width) */
+  --casl: "CASL" 1;
+
+  /* Casual: Linear to Casual */
+  --wght: "wght" 700;
+
+  /* Weight: Light to ExtraBlack; usually set with `font-weight` */
+  --slnt: "slnt" 0;
+
+  /* Slant: 0 to -15 degrees, auto cursive at -14 */
+  --CRSV: "CRSV" 1;
+  /* Cursive: always roman, auto substitution, or always cursive */
+
+  /* apply axis values with CSS custom properties */
+  font-variation-settings: var(--mono), var(--casl), var(--wght), var(--slnt), var(--CRSV);
+}
+
+b,
+strong {
+  font-weight: 700;
+}

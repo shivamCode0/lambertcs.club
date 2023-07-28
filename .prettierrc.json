@@ -1,0 +1,9 @@
+{
+  "printWidth": 200,
+  "overrides": [
+    {
+      "files": ["src/pages/index.tsx"],
+      "options": { "printWidth": 80 }
+    }
+  ]
+}
