@@ -3,6 +3,7 @@ import Image from "next/image";
 import banner from "../img/banner3.jpg";
 import Link from "next/link";
 import { BsChevronRight } from "react-icons/bs";
+import { AiFillClockCircle } from "react-icons/ai";
 import { MdCardTravel, MdBookmarks, MdAccountCircle } from "react-icons/md";
 import { SiGroupme } from "react-icons/si";
 import Typed from "react-typed";
@@ -22,20 +23,70 @@ export default function index() {
           }}
           className="blob1"
         />
-        <div className="container col-xl-10 col-xxl-8 px-4">
-          <h1 className="main-header text-center">
+        <div
+          className="container col-xl-10 col-xxl-8 px-4 py-6"
+          style={{
+            height: "70vh",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div
+              className="divthingclockicontime"
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <AiFillClockCircle
+                size={20}
+                color="var(--grays-gray-alpha-8, rgba(255, 255, 255, 0.25))"
+              />
+              <span className="spanthing">
+                Wednesdays at 7:45 AM in rm 1517
+              </span>
+            </div>
+          </div>
+          <h1 className="main-header text-center hover-effect">
             <Typed
               strings={["Lambert CS Club"]}
               typeSpeed={60}
               startDelay={100}
             />
           </h1>
-          <p className="display-6 text-center">
-            Official Website of the Computer Science Club @ Lambert High School
+          <p
+            className="display-5 text-center"
+            style={{
+              fontSize: "32px",
+              fontWeight: "300",
+              paddingBottom: "70px",
+            }}
+          >
+            Where we build cool things and nerd about code.
           </p>
+          <div className="mouse"></div>
         </div>
       </div>
-      <div className="container mt-3">
+      <div
+        className="container mt-3"
+        style={{
+          height: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+      >
         <div className="container px-4 text-center" id="featured-3">
           {/* <h2 className="pb-2 border-bottom">Learn More</h2> */}
           <div className="row g-4 pt-5 row-cols-1 row-cols-lg-3">
