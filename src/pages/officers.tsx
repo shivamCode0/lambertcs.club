@@ -12,7 +12,7 @@ export default function OfficersPage() {
       <hr />
       <div className="row mt-5" style={{ justifyContent: "center" }}>
         {officers.map((v) => (
-          <div className="col-12 col-md-6 col-lg-4">
+          <div className="col-12 col-md-6 col-lg-4" key={v.name}>
             <div className="card mb-3" key={v.name}>
               <div className="row g-0">
                 <div className="col-6">
