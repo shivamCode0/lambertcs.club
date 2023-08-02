@@ -25,16 +25,6 @@ export default function index() {
             opacity: 1,
           }}
         />
-        {/* <div style={{ position: "absolute", top: 0, left: 0, bottom: 0, right: 0, zIndex: -68, background: "linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%)" }} /> */}
-        {/* <div
-          style={{
-            position: "absolute",
-            inset: "0",
-            opacity: 0.5,
-            zIndex: -68,
-          }}
-          className="blob1"
-        /> */}
         <div
           className="container col-xl-10 col-xxl-8 px-4 py-6"
           style={{
@@ -87,13 +77,14 @@ export default function index() {
           >
             Where we build cool things and nerd about code.
           </p>
-          <div className="mouse"></div>
+          <div className="mouse" />
         </div>
       </div>
       <div
-        className="container mt-3"
+        className="container"
         style={{
-          height: "100vh",
+          // height: "100vh",
+          marginTop: "10vh",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
