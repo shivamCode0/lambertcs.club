@@ -21,12 +21,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         outerScale={2}
         outerAlpha={0}
         // hasBlendMode={true}
-        innerStyle={{
-          backgroundColor: "var(--cursor-color)",
-        }}
-        outerStyle={{
-          border: "2px solid #A0A0A0",
-        }}
+        innerStyle={{ backgroundColor: "var(--cursor-color)" }}
+        outerStyle={{ border: "2px solid #A0A0A0" }}
+        trailingSpeed={6}
       />
       <Meta {...{ title: "Lambert CS Club", description: "The official website of the Computer Science Club at Lambert High School in Suwanee, GA" }} />
       <TopNavBar />

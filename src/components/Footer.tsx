@@ -17,14 +17,18 @@ export default function Footer() {
             <span className="mb-3 mb-md-0 text-muted">© 2023 Lambert CS Club</span>
             <br />
             <span className="mb-3 mb-md-0 text-muted" style={{ fontSize: "0.75em" }}>
-              Website made by Shivam
+              Website made by{" "}
+              <a className="no-a" href="https://shivam.pro">
+                Shivam Gupta
+              </a>{" "}
+              & Ryan Du
             </span>
           </div>
         </div>
 
         <ul className="nav col-md-6 list-unstyled d-flex mb-3 mb-md-0 justify-content-center" style={{ flexWrap: "nowrap" }}>
           <li>
-            <a href="mailto:shivam@shivam.pro" className="text-muted no-a">
+            <a href="mailto:officers@lambertcs.club" className="text-muted no-a">
               <HiMail className="me-1" />
               officers@lambertcs.club (not yet)
             </a>

@@ -10,7 +10,7 @@ export default function TopNavBar() {
   return (
     <Navbar expand="md" variant="dark" className="px-2 pt-2 text-center topnavbar" style={{ display: "flex", justifyContent: "space-between" }}>
       <div className="container-md">
-        <Navbar.Brand href="/" as={Link} className="mr-auto">
+        <Navbar.Brand href="/" as={Link}>
           <Image src={logo} alt="" width="30" height="30" className="d-inline-block align-top me-2" />
           <span className="fw-bold fh">Lambert CS Club</span>
         </Navbar.Brand>

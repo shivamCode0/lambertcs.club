@@ -20,7 +20,7 @@ $primary: #59fed5;
 
 html {
   scroll-behavior: smooth;
-  --cursor-color: #fff
+  --cursor-color: #fff;
 }
 
 //on hover, translate up 8px and zoom in 1.1x to give a hover effect
@@ -59,7 +59,7 @@ html {
   font-variation-settings: var(--mono), var(--casl), var(--wght), var(--slnt), var(--CRSV);
 }
 
-p { 
+p {
   font-weight: 300;
 }
 
@@ -67,9 +67,7 @@ b,
 strong {
   font-weight: 700;
 }
-
 .spanthing {
-  
   color: var(--grays-gray-alpha-11, rgba(255, 255, 255, 0.59));
   padding-left: 5px;
 }
@@ -81,32 +79,31 @@ strong {
   background: var(--grays-slate-alpha-8, rgba(1, 30, 50, 0.24));
 }
 
-
 // mouse scroll indicator
 .mouse {
-	overflow:hidden;
-  position:absolute;
-  left:50%;
-  top:94%;
-  width:28px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 94%;
+  width: 28px;
   margin: -14px;
-  height:50px;
-  border:2px solid white;
-  border-radius:30px;
-  opacity:.3;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 30px;
+  opacity: 0.3;
 }
 
 .mouse:after {
   display: block;
-  content:"";
-  position:absolute;
-  left:13px;
-  top:10px;
-  width:4px;
-  height:4px;
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 10px;
+  width: 4px;
+  height: 4px;
   margin-left: -3px;
-  background-color:white;
-  border-radius:2px;
+  background-color: white;
+  border-radius: 2px;
   animation: mouse-wheel 2.5s ease-out infinite;
 }
 
@@ -114,27 +111,17 @@ strong {
   0% {
     transform: translateY(0);
     opacity: 0;
-  }  
+  }
   10% {
     transform: translateY(0);
     opacity: 1;
   }
-  // 30% {
-  //   transform: translateY(0);
-  //   height: 4px;
-  // }
+
   50% {
     transform: translateY(0);
     height: 20px;
   }
-  // 70% {
-  //   transform: translateY(15px);
-  //   height: 4px;
-  //   opacity: 1;
-  // }
-  // 90% {
-  //   opacity: 0;
-  // }
+
   100% {
     transform: translateY(15px);
     opacity: 0;

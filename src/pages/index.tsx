@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import banner from "../img/banner3.jpg";
+import banner from "@/img/bg.jpg";
 import Link from "next/link";
 import { BsChevronRight } from "react-icons/bs";
 import { AiFillClockCircle } from "react-icons/ai";
@@ -12,9 +12,21 @@ export default function index() {
   return (
     <div>
       <div className="position-relative py-1 py-5 mt-5">
-        {/* <Image src={banner} alt="banner" fill className="hero-image" placeholder="blur" style={{ zIndex: -69 }} />
-        <div style={{ position: "absolute", top: 0, left: 0, bottom: 0, right: 0, zIndex: -68, background: "linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%)" }} /> */}
-        <div
+        <Image
+          src={banner}
+          alt="banner"
+          fill
+          className="hero-image"
+          // placeholder="blur"
+          style={{
+            zIndex: -69,
+            objectFit: "cover",
+            filter: "blur(calc(30px + 3vw))",
+            opacity: 1,
+          }}
+        />
+        {/* <div style={{ position: "absolute", top: 0, left: 0, bottom: 0, right: 0, zIndex: -68, background: "linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%)" }} /> */}
+        {/* <div
           style={{
             position: "absolute",
             inset: "0",
@@ -22,7 +34,7 @@ export default function index() {
             zIndex: -68,
           }}
           className="blob1"
-        />
+        /> */}
         <div
           className="container col-xl-10 col-xxl-8 px-4 py-6"
           style={{
@@ -54,7 +66,7 @@ export default function index() {
                 color="var(--grays-gray-alpha-8, rgba(255, 255, 255, 0.25))"
               />
               <span className="spanthing">
-                Wednesdays at 7:45 AM in rm 1517
+                Wednesdays at 7:45 AM in room 1517
               </span>
             </div>
           </div>
