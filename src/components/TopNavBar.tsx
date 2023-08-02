@@ -8,14 +8,15 @@ import { useRouter } from "next/router";
 export default function TopNavBar() {
   const Router = useRouter();
   return (
-    <Navbar expand="md" variant="dark" className="px-2 text-center topnavbar" style={{ display: "flex", justifyContent: "space-around" }}>
+    <Navbar expand="md" variant="dark" className="px-2 pt-2 text-center topnavbar" style={{ display: "flex", justifyContent: "space-between" }}>
       <div className="container-md">
-        <Navbar.Brand href="/" as={Link} className="mx-auto">
+        <Navbar.Brand href="/" as={Link}>
           <Image src={logo} alt="" width="30" height="30" className="d-inline-block align-top me-2" />
           <span className="fw-bold fh">Lambert CS Club</span>
         </Navbar.Brand>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ position: "absolute", right: "1em", top: "0.5em" }} />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" style={{ flexGrow: 0 }}>
           <Nav className="ms-4">
             {Object.entries({
               Home: "/",

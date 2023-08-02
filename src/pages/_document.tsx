@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
-const FONTURL = "https://fonts.googleapis.com/css2?family=Recursive:wght,CRSV@400,0.5;400,1;700,0.5&family=IBM+Plex+Sans:wght@400;500;600&display=swap";
+const FONTURL = "https://fonts.googleapis.com/css2?family=Recursive:wght,CRSV@300,0.5;400,0.5;400,1;700,0.5&family=IBM+Plex+Sans:wght@400;500;600&display=swap";
 
 export default function Document() {
   return (

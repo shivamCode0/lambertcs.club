@@ -20,8 +20,16 @@ $primary: #59fed5;
 
 html {
   scroll-behavior: smooth;
+  --cursor-color: #fff;
 }
 
+//on hover, translate up 8px and zoom in 1.1x to give a hover effect
+.hover-effect {
+  transition: all 0.8s ease;
+  &:hover {
+    transform: translateY(-8px) scale(1.03);
+  }
+}
 .topnavbar {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   z-index: 1000;
@@ -51,7 +59,71 @@ html {
   font-variation-settings: var(--mono), var(--casl), var(--wght), var(--slnt), var(--CRSV);
 }
 
+p {
+  font-weight: 300;
+}
+
 b,
 strong {
   font-weight: 700;
+}
+.spanthing {
+  color: var(--grays-gray-alpha-11, rgba(255, 255, 255, 0.59));
+  padding-left: 5px;
+}
+
+.divthingclockicontime {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 29px;
+  background: var(--grays-slate-alpha-8, rgba(1, 30, 50, 0.24));
+}
+
+// mouse scroll indicator
+.mouse {
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 94%;
+  width: 28px;
+  margin: -14px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 30px;
+  opacity: 0.3;
+}
+
+.mouse:after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  margin-left: -3px;
+  background-color: white;
+  border-radius: 2px;
+  animation: mouse-wheel 2.5s ease-out infinite;
+}
+
+@keyframes mouse-wheel {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(0);
+    height: 20px;
+  }
+
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
 }
